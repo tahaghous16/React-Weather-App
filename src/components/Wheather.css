@@ -1,0 +1,155 @@
+/* ===== Body Background ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #c7d2fe, #e0f7fa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ===== Weather Card ===== */
+.wheather {
+  place-self: center;
+  padding: 40px;
+  border-radius: 16px;
+  background: linear-gradient(145deg,rgb(147, 162, 195), #1e3c72);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Search Bar ===== */
+.search-wrapper {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  justify-content: center;
+}
+
+.search-bar input {
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding-left: 25px;
+  color: #333;
+  background: #f0f8ff;
+  font-size: 18px;
+  flex: 1;
+}
+
+.search-bar img {
+  width: 20px;
+  padding: 15px;
+  border-radius: 50%;
+  background: #f0f8ff;
+  cursor: pointer;
+}
+
+/* ===== Weather Icon and Info ===== */
+.wheather-icon {
+  width: 150px;
+  margin: 30px 0;
+}
+
+.temperature {
+  color: #ffffff;
+  font-size: 80px;
+  line-height: 1;
+}
+
+.location {
+  color: #ffffff;
+  font-size: 40px;
+}
+
+/* ===== Weather Data Bottom ===== */
+.wheather-data {
+  width: 100%;
+  margin-top: 40px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wheather-data .col {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 22px;
+}
+
+.wheather-data .col span {
+  display: block;
+  font-size: 16px;
+}
+
+.wheather-data .col img {
+  width: 26px;
+  margin-top: 10px;
+}
+
+/* ===== Responsive for Mobile ===== */
+@media (max-width: 600px) {
+  .wheather {
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 90%;
+    
+  }
+
+  .search-bar {
+    gap: 10px;
+  }
+
+  .search-bar input {
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .search-bar img {
+    width: 20px;
+    padding: 12px;
+  }
+
+  .temperature {
+    font-size: 48px;
+  }
+
+  .location {
+    font-size: 28px;
+  }
+
+  .wheather-data {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .wheather-data .col {
+    flex-direction: row;
+    gap: 10px;
+    font-size: 18px;
+  }
+
+  .wheather-data .col span {
+    font-size: 14px;
+  }
+
+  .wheather-data .col img {
+    width: 22px;
+    margin-top: 6px;
+  }
+}
